@@ -19,4 +19,15 @@ module.exports= class validators {
         }
         return errors
     }
+    static login(data){
+        let errors={}
+        const { email,password} = data;
+        if(!validator.isEmail(email)){
+            errors.email="邮箱格式不正确"
+        }
+        if(validator.isEmpty(password)){
+            errors.email="密码不能为空"
+        }
+        return errors
+    }
 }

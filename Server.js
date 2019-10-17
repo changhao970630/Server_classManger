@@ -3,6 +3,11 @@ const app = express();
 const port = 3000;
 const userRouter  = require('./routes/user');
 const DB_userConnect = require("./connect_db_user");
+const passport = require("passport");
+app.use(passport.initialize()); //passport初始化(! important)
+let f = require('./tools/passport');
+// console.log(f.toString())
+f(passport);
 app.all('*', function (req, res, next) {
     res.header('Access-Control-Allow-Origin', '*');
     //Access-Control-Allow-Headers ,可根据浏览器的F12查看,把对应的粘贴在这里就行
