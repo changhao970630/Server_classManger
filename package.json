@@ -1,0 +1,19 @@
+{
+  "name": "server_classmanger",
+  "version": "1.0.0",
+  "description": "NodeJs dev Class manger",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/changhao970630/Server_classManger.git"
+  },
+  "author": "changhao",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/changhao970630/Server_classManger/issues"
+  },
+  "homepage": "https://github.com/changhao970630/Server_classManger#readme"
+}
