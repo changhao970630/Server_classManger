@@ -18,6 +18,8 @@
   "homepage": "https://github.com/changhao970630/Server_classManger#readme",
   "dependencies": {
     "express": "^4.17.1",
-    "mongoose": "^5.7.5"
+    "mongoose": "^5.7.5",
+    "nodemon": "^1.19.4",
+    "validator": "^11.1.0"
   }
 }
