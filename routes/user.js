@@ -42,13 +42,16 @@ router.post("/user/login", async (req, res) => {
             jwt.sign(rules, keys, {expiresIn: 3600 * 24}, (err, token) => {
                 if (err) throw err
                 else {
-                    res.json({data: {success: "登录成功！", email: email, nick_name: findResult.nick_name, token}})
+                    console.log(findResult)
+                    res.json({data: {success: "登录成功！", email: email, nick_name: findResult.nick_name,identity:findResult.identity, token}})
                 }
             })
 
         } else {
             res.json({error: "账号或密码错误"})
         }
+    }else{
+        res.json({errors:login(req.body)})
     }
 })
 router.get("/",passport.authenticate('jwt',{session:false}),(req,res)=>{
