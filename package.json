@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/changhao970630/Server_classManger#readme",
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^5.7.5",
     "nodemon": "^1.19.4",
